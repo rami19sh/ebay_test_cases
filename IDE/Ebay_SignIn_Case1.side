@@ -1,0 +1,152 @@
+{
+  "id": "fbc56b9a-736b-4287-87ec-cc055516c0c6",
+  "version": "2.0",
+  "name": "Ebay_SignIn_Case1",
+  "url": "https://www.ebay.com",
+  "tests": [{
+    "id": "cdd6e5d4-7b50-4280-b013-d373480f44cf",
+    "name": "positive",
+    "commands": [{
+      "id": "33aaf8fc-52b1-4eea-a063-32352077f4a8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3349a7f5-3dd5-4c72-a021-d7f076bf1532",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b39fa67-48ba-4160-9477-11190ad5f317",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=#gh-ug > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//span[@id='gh-ug']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d901275-a201-4e95-827c-ed6b819488d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=create-account-link",
+      "targets": [
+        ["id=create-account-link", "id"],
+        ["linkText=create an account", "linkText"],
+        ["css=#create-account-link", "css:finder"],
+        ["xpath=//a[contains(text(),'create an account')]", "xpath:link"],
+        ["xpath=//a[@id='create-account-link']", "xpath:attributes"],
+        ["xpath=//span[@id='signin-reg-msg']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://reg.ebay.com/reg/PartialReg?siteid=0&co_partnerId=0&UsingSSL=1&rv4=1&ru=https%3A%2F%2Fwww.ebay.com%2F&signInUrl=https%3A%2F%2Fwww.ebay.com%2Fsignin%3Fsgn%3Dreg%26siteid%3D0%26co_partnerId%3D0%26UsingSSL%3D1%26rv4%3D1%26ru%3Dhttps%253A%252F%252Fwww.ebay.com%252F')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'create an account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26bb5096-5729-47e2-a523-f05fa1b7cfcc",
+      "comment": "",
+      "command": "click",
+      "target": "id=firstname",
+      "targets": [
+        ["id=firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#firstname", "css:finder"],
+        ["xpath=//input[@id='firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[3]/div[2]/div/div/div/div/form/div/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e93e032-0480-4e6a-9f47-a5414d06c52e",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstname",
+      "targets": [
+        ["id=firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#firstname", "css:finder"],
+        ["xpath=//input[@id='firstname']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[3]/div[2]/div/div/div/div/form/div/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//div/span/span/span/input", "xpath:position"]
+      ],
+      "value": "rami"
+    }, {
+      "id": "826aac16-7887-45aa-bfa6-5ee86cbc40ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastname",
+      "targets": [
+        ["id=lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#lastname", "css:finder"],
+        ["xpath=//input[@id='lastname']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[3]/div[2]/div/div/div/div/form/div[2]/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/span/span/input", "xpath:position"]
+      ],
+      "value": "shekh"
+    }, {
+      "id": "3e76771b-532d-4c19-8e2c-00fbc20b3a9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[@id='search-container']/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": "wenirig295@syswift.com"
+    }, {
+      "id": "d36c4e85-27fa-4da2-be8f-3cc05b705d96",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[3]/div[2]/div/div/div/div/form/div[4]/span/span/span/input", "xpath:idRelative"],
+        ["xpath=//div[4]/span/span/span/input", "xpath:position"]
+      ],
+      "value": "991594123rami"
+    }, {
+      "id": "9077897c-f330-4079-bc95-cd9bb9e587c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=EMAIL_REG_FORM_SUBMIT",
+      "targets": [
+        ["id=EMAIL_REG_FORM_SUBMIT", "id"],
+        ["name=EMAIL_REG_FORM_SUBMIT", "name"],
+        ["css=#EMAIL_REG_FORM_SUBMIT", "css:finder"],
+        ["xpath=//button[@id='EMAIL_REG_FORM_SUBMIT']", "xpath:attributes"],
+        ["xpath=//div[@id='mainContent']/div[3]/div[2]/div/div/div/div/form/div[6]/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "16bb738a-0a3c-48ae-972f-e0b1a19cdaef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cdd6e5d4-7b50-4280-b013-d373480f44cf"]
+  }],
+  "urls": ["https://www.ebay.com/"],
+  "plugins": []
+}

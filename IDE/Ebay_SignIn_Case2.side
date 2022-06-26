@@ -1,0 +1,123 @@
+{
+  "id": "fbc56b9a-736b-4287-87ec-cc055516c0c6",
+  "version": "2.0",
+  "name": "Ebay_SignIn_Case1",
+  "url": "https://www.ebay.com",
+  "tests": [{
+    "id": "a1f1cb35-e89f-4d71-be91-d137cdf5cfce",
+    "name": "nigative",
+    "commands": [{
+      "id": "f617d1b4-2998-471a-acd2-6984d19cfa15",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b20ae07e-54f4-4dd7-834c-749d66a8c235",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bde41197-517c-46d6-a12d-f7c6e0cd4c43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=#gh-ug > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//span[@id='gh-ug']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0382f62c-d7e6-4cf3-b915-59bfa99c3363",
+      "comment": "",
+      "command": "click",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94c43ee4-2dbd-4ea2-a790-cf2965fe5a16",
+      "comment": "",
+      "command": "type",
+      "target": "id=userid",
+      "targets": [
+        ["id=userid", "id"],
+        ["name=userid", "name"],
+        ["css=#userid", "css:finder"],
+        ["xpath=//input[@id='userid']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "rami-sdsmd@jsdksd.sdsd"
+    }, {
+      "id": "558f0c0c-3d77-407a-a727-dc004cc4bee2",
+      "comment": "",
+      "command": "click",
+      "target": "id=signin-continue-btn",
+      "targets": [
+        ["id=signin-continue-btn", "id"],
+        ["name=signin-continue-btn", "name"],
+        ["css=#signin-continue-btn", "css:finder"],
+        ["xpath=//button[@id='signin-continue-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bc71b79-758b-4199-8ddf-1aa4eac34d78",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=signin-continue-btn",
+      "targets": [
+        ["id=signin-continue-btn", "id"],
+        ["name=signin-continue-btn", "name"],
+        ["css=#signin-continue-btn", "css:finder"],
+        ["xpath=//button[@id='signin-continue-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59a4997-2053-41d9-a07a-d159fc6e2248",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=signin-continue-btn",
+      "targets": [
+        ["id=signin-continue-btn", "id"],
+        ["name=signin-continue-btn", "name"],
+        ["css=#signin-continue-btn", "css:finder"],
+        ["xpath=//button[@id='signin-continue-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='signin-form']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "16bb738a-0a3c-48ae-972f-e0b1a19cdaef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ebay.com/"],
+  "plugins": []
+}
